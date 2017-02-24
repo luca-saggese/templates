@@ -248,6 +248,23 @@
     "ports": [
       "8080/tcp"
     ],
+    "env": [
+      {
+        "name": "PLANET_DATA_URL",
+        "label": "pbf url (default Monaco)"
+      },
+      {
+        "name": "OSM2PGSQL_CACHE",
+        "label": "The cache size (in MB) passed to nominatim via the --osm2pgsql-cache argument (default 14000)"
+      },
+      {
+        "name": "EXTERNAL_PORT",
+        "label": "The external port (and ip address) to bind to (default 127.0.0.1:8080)"
+      },
+      {
+        "name": "IMPORT_DATA_DIR",
+        "label": "The directory where the planet file data.osm.pbf is stored"
+      },
     "volumes": ["nominatim-database"]
   }
 ]
