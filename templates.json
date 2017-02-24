@@ -239,5 +239,18 @@
       "3000/tcp"
     ],
     "volumes": ["/usr/src/redmine/files"]
+  },
+  {
+    "title": "Nominatim",
+    "description": "A nominatim image for use together with the vanilla mdillon/postgis image",
+    "logo": "http://bob.jonkman.ca/blogs/files/2012/08/newosmlogo-300x300.png",
+    "image": "bringnow/nominatim:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["nominatim-database"]
   }
 ]
+
+
+
